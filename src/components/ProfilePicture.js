@@ -2,14 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import profilePicture from '../img/Somto.JPG';
 
+const ImageContainer = styled.div`
+  width: 250px;
+`;
+
 const Image = styled.img`
-  width: 100%;
-  height: auto;
+  max-width: 100%;
   border-radius: 6px;
+  object-fit: contain;
 `;
 
 const ProfilePicture = () => {
-  return <Image src={profilePicture} alt="Somtochukwu_Medua-Ugeh" />;
+  return (
+    <ImageContainer>
+      <Image src={profilePicture} alt="Somtochukwu_Medua-Ugeh" />
+    </ImageContainer>
+  );
 };
 
 export default ProfilePicture;
