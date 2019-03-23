@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import ProfilePicture from './ProfilePicture';
 
 export class HomePage extends Component {
   render() {
     return (
       <div>
-        <p>hi</p>
+        <ProfilePicture />
       </div>
     );
   }
