@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import profilePicture from '../img/Somto.JPG';
 
 const ImageContainer = styled.div`
-  width: 250px;
+  width: 200px;
 `;
 
 const Image = styled.img`
