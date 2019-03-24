@@ -65,8 +65,8 @@ const Group = styled.div`
 `;
 
 const WriteUp = styled.p`
-  padding: 16px 0 0 !important;
-  line-height: 1.4;
+  padding: 18px 0 0 !important;
+  line-height: 1.5;
 `;
 
 const Content = () => {
@@ -81,16 +81,16 @@ const Content = () => {
       <Group>
         <WriteUp>
           My passion is creating, and I find happiness in being a better me today than I was
-          yesterday.
+          yesterday. I build, operate & sometimes rescue full-stack web applications.
         </WriteUp>
 
         <WriteUp>
-          I am a <span>JavaScript Developer</span>, currently living in Lagos, Nigeria.
+          I am a <span>JavaScript Developer</span>, currently working at{' '}
+          <LinkSpan>Softcom</LinkSpan>, Lagos, Nigeria.
         </WriteUp>
         <WriteUp>
-          I work as a <span>Frontend Developer</span> at <LinkSpan>Softcom</LinkSpan>. I love my
-          work, it has allowed me to understand the design and development coverage of digital
-          products.
+          I love my work, it has allowed me to understand design and development of digital products
+          and how it affects our users.
         </WriteUp>
       </Group>
 
@@ -136,16 +136,21 @@ const Content = () => {
 
       <Group>
         <WriteUp>
-          Previously, I have had to work across multiple roles including product design, print
-          design and web development. Though my expertise these days are more focused on
-          experimentation, strategy, user research, usability testing and front-end implementation.
+          Previously, I have had to work to start-ups and community driven initiatives. I worked
+          multiple roles; ranging from community manager to front-end developer. These days, I am
+          more focused on experimentation, strategy, and front-end implementation of products.
         </WriteUp>
 
-        <WriteUp>I have a background in architecture and urban planning</WriteUp>
+        <WriteUp>
+          Where can you see my work? <Span>Email me</Span> and I will prepare work samples relevant
+          to your project with accompanying details.
+        </WriteUp>
+
+        <WriteUp>I have a background in architecture and urban planning </WriteUp>
 
         <WriteUp>
-          Outside of Work, I watch a lot of TV shows and I love to hang out with my friends. I also
-          really love <LinkSpan>Barcelona</LinkSpan>.
+          Outside of work, I watch a lot of TV shows and I love to hang out with my friends. I also
+          really love <LinkSpan>Barcelona</LinkSpan> <span style={{ marginLeft: '3px' }}>⚽️</span>
         </WriteUp>
 
         <WriteUp>
