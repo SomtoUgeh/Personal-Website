@@ -157,7 +157,7 @@ const Content = () => {
 
         <WriteUp>
           Where can you see my work?{' '}
-          <Span href="mailto:hello@somto.dev?subject=Hello Somto!">Email me</Span>. and I will
+          <Span href="mailto:hello@somto.dev?subject=Hello Somto!">Email me</Span> and I will
           prepare work samples relevant to your project with accompanying details.
         </WriteUp>
 
