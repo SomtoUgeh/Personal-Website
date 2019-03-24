@@ -46,6 +46,13 @@ const Span = styled.a`
   }
 `;
 
+const LogoContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  justify-content: center;
+`;
+
 const ProfilePicture = () => {
   return (
     <ImageContainer>
@@ -54,7 +61,7 @@ const ProfilePicture = () => {
         <h4 className="contact">Get in touch</h4>
         <Span href="mailto:hello@somto.dev?subject=Hello Somto!">hello@somto.dev</Span>
 
-        <div>
+        <LogoContainer>
           <a href="https://github.com/SomtoUgeh" target="_blank">
             <span class="svg-width">
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +121,7 @@ const ProfilePicture = () => {
               </svg>
             </span>
           </a>
-        </div>
+        </LogoContainer>
       </div>
 
       <div className="footer">
