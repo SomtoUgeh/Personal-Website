@@ -9,7 +9,7 @@ const Page = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 65%;
+  width: 60%;
   margin: 0 auto;
   padding: 85px 0;
 
