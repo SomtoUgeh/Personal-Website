@@ -21,4 +21,6 @@ a {
 
 p {
   font-family: 'Akkurat-Light', sans-serif;
+  font-size: 18px;
+  margin: 0 !important;
 }

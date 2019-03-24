@@ -1,52 +1,81 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const NameHeader = styled.h1`
-  font-size: 60px;
-  font-weight: 800;
-`;
-
 const Span = styled.span`
   position: relative;
   cursor: pointer;
 
   &::after {
-    display: block;
     content: '';
+    display: block;
     width: 100%;
     height: 4px;
     background: red;
     position: absolute;
     right: 0;
-    top: 11px;
+    bottom: 3px;
     opacity: 0.4;
     transition: all 300ms ease-in-out;
   }
 
   &:hover::after {
-    top: 15px;
+    bottom: 0;
+    height: 2px;
+  }
+`;
+
+const LinkSpan = styled.a`
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: -2px;
+    border-style: solid;
+    border-width: 0 8px 8px 0;
+    border-color: transparent #b0bec5 transparent transparent;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: red;
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    opacity: 0.4;
+    transition: all 300ms ease-in-out;
+  }
+
+  &:hover::after {
+    bottom: 0;
     height: 2px;
   }
 `;
 
 const Group = styled.div`
   margin: 0;
-  /* padding: 30px 0; */
 `;
 
 const WriteUp = styled.p`
-  margin: 0 !important;
   padding: 16px 0 0 !important;
-  font-size: 18px;
+  line-height: 1.4;
 `;
 
 const Content = () => {
   return (
     <div>
-      <h2>Profile</h2>
+      <h1>Profile</h1>
 
       <WriteUp>
-        Hello, I'm Somto. I make stuff for the web with JavaScript <span>😉</span>
+        Hello, I'm <span>Somto</span>. I make stuff for the web with JavaScript <span>😉</span>
       </WriteUp>
 
       <Group>
@@ -56,11 +85,12 @@ const Content = () => {
         </WriteUp>
 
         <WriteUp>
-          I am a <Span>JavaScript Developer</Span>, currently living in Lagos, Nigeria.
+          I am a <span>JavaScript Developer</span>, currently living in Lagos, Nigeria.
         </WriteUp>
         <WriteUp>
-          I work as a <Span>Frontend Developer</Span> at <Span>Softcom</Span>. I love my work, it
-          has allowed me to understand the design and development coverage of digital products.
+          I work as a <span>Frontend Developer</span> at <LinkSpan>Softcom</LinkSpan>. I love my
+          work, it has allowed me to understand the design and development coverage of digital
+          products.
         </WriteUp>
       </Group>
 
@@ -69,19 +99,36 @@ const Content = () => {
           <li class="folder">Tool Set</li>
           <ul className="tools">
             <li>
-              <span>React</span>
+              <span>
+                <i class="fab fa-react" />
+              </span>
+              <span class="tool">React</span>
             </li>
             <li>
-              <span>Angular</span>
+              <span>
+                <i class="fab fa-angular" />
+              </span>
+              <span class="tool">Angular</span>
             </li>
             <li>
-              <span>CSS</span>
+              <span>
+                <i class="fab fa-css3-alt" />
+              </span>
+              <span class="tool">CSS</span>
             </li>
             <li>
-              <span>Django</span>
+              <span>
+                <i class="fab fa-python" />
+              </span>
+              <span class="tool">
+                Python <br /> (Django)
+              </span>
             </li>
             <li>
-              <span>Node JS</span>
+              <span>
+                <i class="fab fa-node-js" />
+              </span>
+              <span class="tool">Node JS</span>
             </li>
           </ul>
         </ul>
@@ -98,12 +145,12 @@ const Content = () => {
 
         <WriteUp>
           Outside of Work, I watch a lot of TV shows and I love to hang out with my friends. I also
-          really love <Span>Barcelona</Span>.
+          really love <LinkSpan>Barcelona</LinkSpan>.
         </WriteUp>
 
         <WriteUp>
           I'm currently unavailable for work, but if you just want to chat, you can{' '}
-          <Span>contact me</Span>.
+          <Span>reach out</Span>.
         </WriteUp>
       </Group>
     </div>

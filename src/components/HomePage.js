@@ -6,19 +6,19 @@ import Footer from './Footer';
 
 const Page = styled.div`
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
 `;
 
 const Wrapper = styled.div`
   width: 55%;
   margin: 0 auto;
-  padding: 100px 0 0;
+  padding: 85px 0 0;
 `;
 
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-gap: 50px;
+  grid-gap: 65px;
 `;
 
 export class HomePage extends Component {
