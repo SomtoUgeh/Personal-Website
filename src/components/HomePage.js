@@ -9,9 +9,9 @@ const Page = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 55%;
+  width: 65%;
   margin: 0 auto;
-  padding: 85px 0 0;
+  padding: 85px 0;
 
   @media (max-width: 769px) {
     width: 90%;
