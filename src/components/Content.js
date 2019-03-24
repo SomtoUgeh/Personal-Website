@@ -1,6 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Container = styled.div`
+  @media (max-width: 769px) {
+    order: 1;
+  }
+`;
+
 const Span = styled.span`
   position: relative;
   cursor: pointer;
@@ -71,7 +77,7 @@ const WriteUp = styled.p`
 
 const Content = () => {
   return (
-    <div>
+    <Container>
       <h1>Profile</h1>
 
       <WriteUp>
@@ -146,8 +152,6 @@ const Content = () => {
           to your project with accompanying details.
         </WriteUp>
 
-        <WriteUp>I have a background in architecture and urban planning </WriteUp>
-
         <WriteUp>
           Outside of work, I watch a lot of TV shows and I love to hang out with my friends. I also
           really love <LinkSpan>Barcelona</LinkSpan> <span style={{ marginLeft: '3px' }}>⚽️</span>
@@ -158,7 +162,7 @@ const Content = () => {
           <Span>reach out</Span>.
         </WriteUp>
       </Group>
-    </div>
+    </Container>
   );
 };
 
