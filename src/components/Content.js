@@ -7,9 +7,11 @@ const Container = styled.div`
   }
 `;
 
-const Span = styled.span`
+const Span = styled.a`
   position: relative;
   cursor: pointer;
+  color: black;
+  text-decoration: none;
 
   &::after {
     content: '';
@@ -33,6 +35,8 @@ const Span = styled.span`
 const LinkSpan = styled.a`
   position: relative;
   cursor: pointer;
+  color: black;
+  text-decoration: none;
 
   &::before {
     content: '';
@@ -81,7 +85,8 @@ const Content = () => {
       <h1>Profile</h1>
 
       <WriteUp>
-        Hello, I'm <span>Somto</span>. I make stuff for the web with JavaScript <span>😉</span>
+        Hello, I'm <span>Somtochukwu Medua-Ugeh</span>, Somto for short! I make stuff for the web
+        with JavaScript <span>😉</span>
       </WriteUp>
 
       <Group>
@@ -92,7 +97,10 @@ const Content = () => {
 
         <WriteUp>
           I am a <span>JavaScript Developer</span>, currently working at{' '}
-          <LinkSpan>Softcom</LinkSpan>, Lagos, Nigeria.
+          <LinkSpan href="https://www.softcom.ng" target="_blank">
+            Softcom
+          </LinkSpan>
+          , Lagos, Nigeria.
         </WriteUp>
         <WriteUp>
           I love my work, it has allowed me to understand design and development of digital products
@@ -148,18 +156,20 @@ const Content = () => {
         </WriteUp>
 
         <WriteUp>
-          Where can you see my work? <Span>Email me</Span> and I will prepare work samples relevant
-          to your project with accompanying details.
+          Where can you see my work?{' '}
+          <Span href="mailto:hello@somto.dev?subject=Hello Somto!">Email me</Span>. and I will
+          prepare work samples relevant to your project with accompanying details.
         </WriteUp>
 
         <WriteUp>
           Outside of work, I watch a lot of TV shows and I love to hang out with my friends. I also
-          really love <LinkSpan>Barcelona</LinkSpan> <span style={{ marginLeft: '3px' }}>⚽️</span>
+          really love <LinkSpan href="https://www.fcbarcelona.com/en/">Barcelona</LinkSpan>{' '}
+          <span style={{ marginLeft: '3px' }}>⚽️</span>
         </WriteUp>
 
         <WriteUp>
           I'm currently unavailable for work, but if you just want to chat, you can{' '}
-          <Span>reach out</Span>.
+          <Span href="mailto:hello@somto.dev?subject=Hello Somto!">reach out</Span>.
         </WriteUp>
       </Group>
     </Container>

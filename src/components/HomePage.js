@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Content from './Content';
 import ProfilePicture from './ProfilePicture';
@@ -34,19 +34,17 @@ const Container = styled.div`
   }
 `;
 
-export class HomePage extends Component {
-  render() {
-    return (
-      <Page>
-        <Wrapper>
-          <Container>
-            <ProfilePicture />
-            <Content />
-          </Container>
-        </Wrapper>
-      </Page>
-    );
-  }
-}
+const HomePage = () => {
+  return (
+    <Page data-aos="fade-up">
+      <Wrapper>
+        <Container>
+          <ProfilePicture />
+          <Content />
+        </Container>
+      </Wrapper>
+    </Page>
+  );
+};
 
 export default HomePage;

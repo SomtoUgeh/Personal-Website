@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import profilePicture from '../img/Somto.JPG';
 
 const ImageContainer = styled.div`
-  width: 180px;
+  width: 200px;
 
   @media (max-width: 769px) {
     order: 2;
@@ -19,8 +19,10 @@ const Image = styled.img`
   object-fit: contain;
 `;
 
-const Span = styled.span`
+const Span = styled.a`
   position: relative;
+  color: black;
+  text-decoration: none;
   cursor: pointer;
   font-size: 18px;
   font-family: 'Akkurat-Light', sans-serif;
@@ -50,10 +52,9 @@ const ProfilePicture = () => {
       <Image src={profilePicture} alt="Somtochukwu_Medua-Ugeh" />
       <div style={{ marginTop: '10px' }}>
         <h4 className="contact">Get in touch</h4>
-        <Span>hello@somto.dev</Span>
+        <Span href="mailto:hello@somto.dev?subject=Hello Somto!">hello@somto.dev</Span>
 
         <div>
-          
           <span class="svg-width">
             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <title>GitHub icon</title>
