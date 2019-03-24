@@ -150,7 +150,7 @@ const Content = () => {
 
       <Group>
         <WriteUp>
-          Previously, I have had to work to start-ups and community driven initiatives. I worked
+          Previously, I have worked with start-ups and community driven initiatives. I worked
           multiple roles; ranging from community manager to front-end developer. These days, I am
           more focused on experimentation, strategy, and front-end implementation of products.
         </WriteUp>
