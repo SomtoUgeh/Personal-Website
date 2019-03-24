@@ -29,52 +29,83 @@ const Span = styled.span`
   }
 `;
 
+const Group = styled.div`
+  margin: 0;
+  /* padding: 30px 0; */
+`;
+
+const WriteUp = styled.p`
+  margin: 0 !important;
+  padding: 16px 0 0 !important;
+  font-size: 18px;
+`;
+
 const Content = () => {
   return (
     <div>
-      <NameHeader>Hello, I'm Somto.</NameHeader>
-      <p>
-        I make stuff for the web with JavaScript <span>😉</span>
-      </p>
+      <h2>Profile</h2>
 
-      <p>
-        My passion is creating, and I find happiness in being a better me today than I was
-        yesterday.
-      </p>
+      <WriteUp>
+        Hello, I'm Somto. I make stuff for the web with JavaScript <span>😉</span>
+      </WriteUp>
 
-      <p>
-        I am a <Span>JavaScript Developer</Span>, currently living in Lagos, Nigeria. I work as a{' '}
-        <Span>Frontend Developer</Span> at <Span>Softcom</Span> <span>'super cool place'</span>. I
-        love my work, it has allowed me to understand the design and development coverage of digital
-        products.
-      </p>
+      <Group>
+        <WriteUp>
+          My passion is creating, and I find happiness in being a better me today than I was
+          yesterday.
+        </WriteUp>
 
-      <h3>Tool Set</h3>
-      <span>React</span>
-      <span>Angular</span>
-      <span>CSS and some frameworks</span>
-      <span>Django</span>
-      <span>Node</span>
+        <WriteUp>
+          I am a <Span>JavaScript Developer</Span>, currently living in Lagos, Nigeria.
+        </WriteUp>
+        <WriteUp>
+          I work as a <Span>Frontend Developer</Span> at <Span>Softcom</Span>. I love my work, it
+          has allowed me to understand the design and development coverage of digital products.
+        </WriteUp>
+      </Group>
 
-      <p>
-        Outside of Work, I watch a lot of TV shows and I love to hang out with my friends. I also
-        really love <Span>Barcelona</Span>
-      </p>
-
-      <p>
-        Previously, I have had to work across multiple roles including product design, print design
-        and web development. Though my expertise these days are more focused on experimentation,
-        strategy, user research, usability testing and front-end implementation.
-      </p>
-
-      <p>I have a background in architecture and urban planning</p>
-
-      <p>I'm currently unavailable for work, but if you just want to chat, you can contact me.</p>
-
-      <div>
-        <h3>Currently Learning</h3>
-        <p>Next js and GraphQL</p>
+      <div class="box">
+        <ul class="directory-list">
+          <li class="folder">Tool Set</li>
+          <ul className="tools">
+            <li>
+              <span>React</span>
+            </li>
+            <li>
+              <span>Angular</span>
+            </li>
+            <li>
+              <span>CSS</span>
+            </li>
+            <li>
+              <span>Django</span>
+            </li>
+            <li>
+              <span>Node JS</span>
+            </li>
+          </ul>
+        </ul>
       </div>
+
+      <Group>
+        <WriteUp>
+          Previously, I have had to work across multiple roles including product design, print
+          design and web development. Though my expertise these days are more focused on
+          experimentation, strategy, user research, usability testing and front-end implementation.
+        </WriteUp>
+
+        <WriteUp>I have a background in architecture and urban planning</WriteUp>
+
+        <WriteUp>
+          Outside of Work, I watch a lot of TV shows and I love to hang out with my friends. I also
+          really love <Span>Barcelona</Span>.
+        </WriteUp>
+
+        <WriteUp>
+          I'm currently unavailable for work, but if you just want to chat, you can{' '}
+          <Span>contact me</Span>.
+        </WriteUp>
+      </Group>
     </div>
   );
 };

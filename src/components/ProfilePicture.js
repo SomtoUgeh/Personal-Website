@@ -16,6 +16,10 @@ const ProfilePicture = () => {
   return (
     <ImageContainer>
       <Image src={profilePicture} alt="Somtochukwu_Medua-Ugeh" />
+      <div>
+        <p>Contact me</p>
+        <p>hello@somto.dev</p>
+      </div>
     </ImageContainer>
   );
 };
