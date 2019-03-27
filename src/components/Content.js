@@ -163,7 +163,7 @@ const Content = () => {
 
         <WriteUp>
           Outside of work, I watch a lot of TV shows and I love to hang out with my friends. I also
-          really love <LinkSpan href="https://www.fcbarcelona.com/en/">Barcelona</LinkSpan>{' '}
+          really love <LinkSpan href="https://www.fcbarcelona.com/en/" target='_blank'>Barcelona</LinkSpan>{' '}
           <span style={{ marginLeft: '3px' }}>⚽️</span>
         </WriteUp>
 
