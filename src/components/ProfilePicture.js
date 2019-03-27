@@ -126,7 +126,7 @@ const ProfilePicture = () => {
       </div>
 
       <div className="footer">
-        <p>©️ 2019 Somto M.Ugeh</p>
+        <p>&copy; 2019 Somto M.Ugeh</p>
       </div>
     </ImageContainer>
   );
