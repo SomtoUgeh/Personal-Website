@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import profilePicture from '../img/Somto.JPG';
+import profilePicture2 from '../img/Somto2.JPG';
 
 const ImageContainer = styled.div`
   width: 200px;
@@ -57,7 +58,7 @@ const LogoContainer = styled.div`
 const ProfilePicture = () => {
   return (
     <ImageContainer>
-      <Image src={profilePicture} alt="Somtochukwu_Medua-Ugeh" />
+      <Image src={profilePicture2} alt="Somtochukwu_Medua-Ugeh" />
       <div style={{ marginTop: '10px' }}>
         <h4 className="contact">Get in touch</h4>
         <Span href="mailto:hello@somto.dev?subject=Hello Somto!">hello@somto.dev</Span>
