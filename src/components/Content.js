@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
   @media (max-width: 769px) {
@@ -14,7 +14,7 @@ const Span = styled.a`
   text-decoration: none;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 4px;
@@ -39,7 +39,7 @@ const LinkSpan = styled.a`
   text-decoration: none;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 0;
     height: 0;
@@ -52,7 +52,7 @@ const LinkSpan = styled.a`
   }
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 4px;
@@ -96,7 +96,7 @@ const Content = () => {
         </WriteUp>
 
         <WriteUp>
-          I am a <span>JavaScript Developer</span>, currently working at{' '}
+          I am a <span>JavaScript Developer</span>, currently working at{" "}
           <LinkSpan href="https://www.softcom.ng" target="_blank">
             Softcom
           </LinkSpan>
@@ -156,22 +156,22 @@ const Content = () => {
         </WriteUp>
 
         <WriteUp>
-          Where can you see my work?{' '}
+          Where can you see my work?{" "}
           <Span href="mailto:hello@somto.dev?subject=Hello Somto!">Email me</Span> and I will
           prepare work samples relevant to your project with accompanying details.
         </WriteUp>
 
         <WriteUp>
           Outside of work, I watch a lot of TV shows and I love to hang out with my friends. I also
-          really love{' '}
+          really love{" "}
           <LinkSpan href="https://www.fcbarcelona.com/en/" target="_blank">
             Barcelona
-          </LinkSpan>{' '}
-          <span style={{ marginLeft: '3px' }}>⚽️</span>
+          </LinkSpan>{" "}
+          <span style={{ marginLeft: "3px" }}>⚽️</span>
         </WriteUp>
 
         <WriteUp>
-          I'm currently unavailable for work, but if you just want to chat, you can{' '}
+          I'm currently unavailable for work, but if you just want to chat, you can{" "}
           <Span href="mailto:hello@somto.dev?subject=Hello Somto!">reach out</Span>.
         </WriteUp>
       </Group>

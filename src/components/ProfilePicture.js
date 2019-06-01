@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import profilePicture from '../img/Somto.JPG';
-import profilePicture2 from '../img/Somto2.JPG';
+import React from "react";
+import styled from "styled-components";
+// import profilePicture from '../img/Somto.JPG';
+import profilePicture2 from "../img/Somto2.JPG";
 
 const ImageContainer = styled.div`
   width: 200px;
@@ -26,11 +26,11 @@ const Span = styled.a`
   text-decoration: none;
   cursor: pointer;
   font-size: 18px;
-  font-family: 'Akkurat-Light', sans-serif;
+  font-family: "Akkurat-Light", sans-serif;
 
   &::after {
     display: block;
-    content: '';
+    content: "";
     width: 100%;
     height: 4px;
     background: red;
@@ -59,7 +59,7 @@ const ProfilePicture = () => {
   return (
     <ImageContainer>
       <Image src={profilePicture2} alt="Somtochukwu_Medua-Ugeh" />
-      <div style={{ marginTop: '10px' }}>
+      <div style={{ marginTop: "10px" }}>
         <h4 className="contact">Get in touch</h4>
         <Span href="mailto:hello@somto.dev?subject=Hello Somto!">hello@somto.dev</Span>
 

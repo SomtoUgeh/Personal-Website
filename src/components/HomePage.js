@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Content from './Content';
-import ProfilePicture from './ProfilePicture';
+import React from "react";
+import styled from "styled-components";
+import Content from "./Content";
+import ProfilePicture from "./ProfilePicture";
 
 const Page = styled.div`
   height: 100vh;
