@@ -64,7 +64,7 @@ const ProfilePicture = () => {
         <Span href="mailto:hello@somto.dev?subject=Hello Somto!">hello@somto.dev</Span>
 
         <LogoContainer>
-          <a href="https://github.com/SomtoUgeh" target="_blank">
+          <a href="https://github.com/SomtoUgeh" target="_blank" rel="noopener noreferrer">
             <span class="svg-width">
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>GitHub icon</title>
@@ -73,7 +73,7 @@ const ProfilePicture = () => {
             </span>
           </a>
 
-          <a href="https://twitter.com/SomtoUgeh" target="_blank">
+          <a href="https://twitter.com/SomtoUgeh" target="_blank" rel="noopener noreferrer">
             <span class="svg-width">
               <svg
                 viewBox="0 0 16 16"
@@ -91,7 +91,7 @@ const ProfilePicture = () => {
             </span>
           </a>
 
-          <a href="https://medium.com/@Mr_Ugeh" target="_blank">
+          <a href="https://medium.com/@Mr_Ugeh" target="_blank" rel="noopener noreferrer">
             <span class="svg-width">
               <svg
                 viewBox="0 0 16 16"
@@ -106,7 +106,11 @@ const ProfilePicture = () => {
             </span>
           </a>
 
-          <a href="https://open.spotify.com/playlist/1IL5YgoG99GqRMsHD0Vi42" target="_blank">
+          <a
+            href="https://open.spotify.com/playlist/1IL5YgoG99GqRMsHD0Vi42"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span class="svg-width">
               <svg
                 viewBox="0 0 16 16"
