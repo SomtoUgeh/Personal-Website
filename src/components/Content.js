@@ -79,14 +79,49 @@ const WriteUp = styled.p`
   line-height: 1.5;
 `;
 
+const Nav = styled.div`
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-auto-flow: column;
+  margin-bottom: 35px;
+`;
+
+const NavLinks = styled(Span)`
+  text-decoration: none;
+  color: black;
+  margin-left: 40px !important;
+
+  &::after {
+    right: 0;
+    bottom: 3px;
+  }
+
+  &:hover::after {
+    bottom: 0;
+    height: 2px;
+  }
+`;
+
 const Content = () => {
   return (
     <Container>
-      <h1>Profile</h1>
+      <Nav>
+        <h1>Hi!</h1>
+
+        <NavLinks href="/">Profile</NavLinks>
+
+        <NavLinks
+          href="https://www.notion.so/Blog-83ab00afd11a4192b0060fbc4be2c223"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Blog
+        </NavLinks>
+      </Nav>
 
       <WriteUp>
-        Hello, I'm <span>Somtochukwu Medua-Ugeh</span>, Somto for short! I make stuff for the web
-        with JavaScript <span>😉</span>
+        I am <span>Somtochukwu Medua-Ugeh</span>, Somto for short! I make stuff for the web with
+        JavaScript <span>😉</span>
       </WriteUp>
 
       <Group>
