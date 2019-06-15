@@ -3,13 +3,6 @@ import styled from "styled-components";
 import Content from "./Content";
 import ProfileInfo from "./ProfileInfo";
 
-const Page = styled.div`
-  height: 100vh;
-  overflow: scroll;
-  /* position: absolute;
-  top: 0px; */
-`;
-
 const Wrapper = styled.div`
   width: 60%;
   margin: 0 auto;
@@ -38,14 +31,14 @@ const Container = styled.div`
 
 const HomePage = () => {
   return (
-    <Page data-aos="fade-up">
+    <div data-aos="fade-up">
       <Wrapper>
         <Container>
           <ProfileInfo />
           <Content />
         </Container>
       </Wrapper>
-    </Page>
+    </div>
   );
 };
 

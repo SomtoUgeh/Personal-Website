@@ -25,7 +25,8 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Wrapper = styled.div`
-  position: relative;
+  height: 100vh;
+  overflow: scroll;
 `;
 
 const ThemedWrapper = () => {

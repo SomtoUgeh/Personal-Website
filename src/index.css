@@ -108,14 +108,17 @@
 /* Mode switch */
 .toggle-component-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  align-items: end;
+  margin-top: 20px;
+  margin-right: 25px;
 }
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 24px;
+  width: 52px;
+  height: 23px;
 }
 
 .switch input {
@@ -131,7 +134,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #0f1114;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -149,11 +152,11 @@
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #0f1114;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #0f1114;
 }
 
 input:checked + .slider:before {
@@ -169,4 +172,5 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+  z-index: 20;
 }
