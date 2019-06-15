@@ -42,6 +42,7 @@ export const Span = styled.a`
 
 export const LinkSpan = styled(Span)`
   font-size: 18px;
+  font-weight: 900;
 
   &::before {
     content: "";
@@ -65,5 +66,20 @@ export const LinkSpan = styled(Span)`
     right: 0;
     bottom: 3px;
     transition: all 300ms ease-in-out;
+  }
+`;
+
+export const NavLinks = styled(Span)`
+  text-decoration: none;
+  margin-left: 40px !important;
+
+  &::after {
+    right: 0;
+    bottom: 3px;
+  }
+
+  &:hover::after {
+    bottom: 0;
+    height: 2px;
   }
 `;

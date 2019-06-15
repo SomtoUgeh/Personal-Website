@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Span, LinkSpan } from "./Setup";
+import { Span, LinkSpan, NavLinks } from "./Setup";
 
 const Container = styled.div`
   @media (max-width: 769px) {
@@ -24,31 +24,18 @@ const Nav = styled.div`
   margin-bottom: 35px;
 `;
 
-const NavLinks = styled(Span)`
-  text-decoration: none;
-  color: black;
-  margin-left: 40px !important;
-
-  &::after {
-    right: 0;
-    bottom: 3px;
-  }
-
-  &:hover::after {
-    bottom: 0;
-    height: 2px;
-  }
-`;
-
 const Content = () => {
   return (
     <Container>
       <Nav>
         <h1>Hi!</h1>
 
-        <NavLinks href="/">Profile</NavLinks>
+        <NavLinks variant="default" href="/">
+          Profile
+        </NavLinks>
 
         <NavLinks
+          variant="default"
           href="https://www.notion.so/Blog-83ab00afd11a4192b0060fbc4be2c223"
           target="_blank"
           rel="noopener noreferrer"
@@ -147,7 +134,7 @@ const Content = () => {
 
         <WriteUp>
           I'm currently unavailable for work, but if you just want to chat, you can{" "}
-          <Span variant="default" href="mailto:hello@somto.dev?subject=Hello Somto!">
+          <Span variant="default" href="mailto:smugeh@gmail.com?subject=Hello Somto!">
             reach out
           </Span>
           .
