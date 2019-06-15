@@ -1,72 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { Span, LinkSpan } from "./Setup";
 
 const Container = styled.div`
   @media (max-width: 769px) {
     order: 1;
-  }
-`;
-
-const Span = styled.a`
-  position: relative;
-  cursor: pointer;
-  color: black;
-  text-decoration: none;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background: red;
-    position: absolute;
-    right: 0;
-    bottom: 3px;
-    opacity: 0.4;
-    transition: all 300ms ease-in-out;
-  }
-
-  &:hover::after {
-    bottom: 0;
-    height: 2px;
-  }
-`;
-
-const LinkSpan = styled.a`
-  position: relative;
-  cursor: pointer;
-  color: black;
-  text-decoration: none;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 0;
-    right: -2px;
-    border-style: solid;
-    border-width: 0 8px 8px 0;
-    border-color: transparent #b0bec5 transparent transparent;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background: red;
-    position: absolute;
-    right: 0;
-    bottom: 3px;
-    opacity: 0.4;
-    transition: all 300ms ease-in-out;
-  }
-
-  &:hover::after {
-    bottom: 0;
-    height: 2px;
   }
 `;
 
@@ -132,7 +70,7 @@ const Content = () => {
 
         <WriteUp>
           I am a <span>JavaScript Developer</span>, currently working at{" "}
-          <LinkSpan href="https://www.softcom.ng" target="_blank">
+          <LinkSpan variant="default" href="https://www.softcom.ng" target="_blank">
             Softcom
           </LinkSpan>
           , Lagos, Nigeria.
@@ -192,14 +130,16 @@ const Content = () => {
 
         <WriteUp>
           Where can you see my work?{" "}
-          <Span href="mailto:hello@somto.dev?subject=Hello Somto!">Email me</Span> and I will
-          prepare work samples relevant to your project with accompanying details.
+          <Span variant="default" href="mailto:hello@somto.dev?subject=Hello Somto!">
+            Email me
+          </Span>{" "}
+          and I will prepare work samples relevant to your project with accompanying details.
         </WriteUp>
 
         <WriteUp>
           Outside of work, I watch a lot of TV shows and I love to hang out with my friends. I also
           really love{" "}
-          <LinkSpan href="https://www.fcbarcelona.com/en/" target="_blank">
+          <LinkSpan variant="default" href="https://www.fcbarcelona.com/en/" target="_blank">
             Barcelona
           </LinkSpan>{" "}
           <span style={{ marginLeft: "3px" }}>⚽️</span>
@@ -207,7 +147,10 @@ const Content = () => {
 
         <WriteUp>
           I'm currently unavailable for work, but if you just want to chat, you can{" "}
-          <Span href="mailto:hello@somto.dev?subject=Hello Somto!">reach out</Span>.
+          <Span variant="default" href="mailto:hello@somto.dev?subject=Hello Somto!">
+            reach out
+          </Span>
+          .
         </WriteUp>
       </Group>
     </Container>

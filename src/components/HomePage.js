@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Content from "./Content";
-import ProfilePicture from "./ProfilePicture";
+import ProfileInfo from "./ProfileInfo";
 
 const Page = styled.div`
   height: 100vh;
@@ -39,7 +39,7 @@ const HomePage = () => {
     <Page data-aos="fade-up">
       <Wrapper>
         <Container>
-          <ProfilePicture />
+          <ProfileInfo />
           <Content />
         </Container>
       </Wrapper>

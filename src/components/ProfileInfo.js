@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-// import profilePicture from '../img/Somto.JPG';
 import profilePicture2 from "../img/Somto2.JPG";
+import { Span } from "./Setup";
 
 const ImageContainer = styled.div`
   width: 200px;
@@ -20,33 +20,6 @@ const Image = styled.img`
   object-fit: contain;
 `;
 
-const Span = styled.a`
-  position: relative;
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 18px;
-  font-family: "Akkurat-Light", sans-serif;
-
-  &::after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 4px;
-    background: red;
-    position: absolute;
-    right: 0;
-    bottom: 3px;
-    opacity: 0.4;
-    transition: all 300ms ease-in-out;
-  }
-
-  &:hover::after {
-    bottom: 0;
-    height: 2px;
-  }
-`;
-
 const LogoContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -55,13 +28,15 @@ const LogoContainer = styled.div`
   align-items: center;
 `;
 
-const ProfilePicture = () => {
+const ProfileInfo = () => {
   return (
     <ImageContainer>
       <Image src={profilePicture2} alt="Somtochukwu_Medua-Ugeh" />
       <div style={{ marginTop: "10px" }}>
         <h4 className="contact">Get in touch</h4>
-        <Span href="mailto:hello@somto.dev?subject=Hello Somto!">hello@somto.dev</Span>
+        <Span variant="default" href="mailto:hello@somto.dev?subject=Hello Somto!">
+          hello@somto.dev
+        </Span>
 
         <LogoContainer>
           <a href="https://github.com/SomtoUgeh" target="_blank" rel="noopener noreferrer">
@@ -137,4 +112,4 @@ const ProfilePicture = () => {
   );
 };
 
-export default ProfilePicture;
+export default ProfileInfo;
