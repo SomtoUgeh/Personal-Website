@@ -16,6 +16,23 @@ const Wrapper = styled.div`
     width: 73%;
     padding: 150px 0 0;
   }
+
+  @media (max-width: 1440px) {
+    width: 70%;
+    padding: 40px 0 60px;
+
+    p {
+      font-size: 16px;
+    }
+
+    a {
+      font-size: 16px;
+    }
+
+    .footer p {
+      font-size: 16px;
+    }
+  }
 `;
 
 const Container = styled.div`
