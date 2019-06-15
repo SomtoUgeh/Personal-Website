@@ -30,17 +30,13 @@ const Content = () => {
       <Nav>
         <h1>Hi!</h1>
 
-        <NavLinks variant="default" href="/">
-          Profile
-        </NavLinks>
-
         <NavLinks
           variant="default"
           href="https://www.notion.so/Blog-83ab00afd11a4192b0060fbc4be2c223"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Blog
+          Blog!
         </NavLinks>
       </Nav>
 
