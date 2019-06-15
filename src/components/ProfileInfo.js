@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import profilePicture2 from "../img/Somto2.JPG";
-import { Span } from "./Setup";
+import { Span, SVGs } from "./Setup";
 
 const ImageContainer = styled.div`
   width: 200px;
@@ -40,16 +40,16 @@ const ProfileInfo = () => {
 
         <LogoContainer>
           <a href="https://github.com/SomtoUgeh" target="_blank" rel="noopener noreferrer">
-            <span class="svg-width">
+            <SVGs variant="default">
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>GitHub icon</title>
                 <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
               </svg>
-            </span>
+            </SVGs>
           </a>
 
           <a href="https://twitter.com/SomtoUgeh" target="_blank" rel="noopener noreferrer">
-            <span class="svg-width">
+            <SVGs variant="default">
               <svg
                 viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,11 +63,11 @@ const ProfileInfo = () => {
                   fill-rule="nonzero"
                 />
               </svg>
-            </span>
+            </SVGs>
           </a>
 
           <a href="https://medium.com/@Mr_Ugeh" target="_blank" rel="noopener noreferrer">
-            <span class="svg-width">
+            <SVGs variant="default">
               <svg
                 viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ const ProfileInfo = () => {
               >
                 <path d="M11.824 12.628l-.276.45.798.398 2.744 1.372c.15.076.294.11.418.11.278 0 .467-.177.467-.492V5.883l-4.15 6.745zm4.096-8.67c-.004-.003 0-.01-.003-.012l-4.825-2.412c-.06-.03-.123-.038-.187-.044-.016 0-.03-.01-.047-.01-.184 0-.368.092-.467.254l-.24.39-.5.814-1.89 3.08 1.89 3.076.5.813.5.812.59.95 4.71-7.64c.02-.03.01-.06-.02-.08zm-6.27 7.045L7.17 6.97l-.295-.477-.294-.477-.25-.416v4.867l3.32 1.663.5.25.5.25-.5-.813-.5-.813zM.737 1.68L.59 1.608c-.085-.042-.166-.062-.24-.062-.206 0-.35.16-.35.427v10.162c0 .272.2.594.442.716l4.145 2.08c.107.06.208.08.3.08.257 0 .438-.2.438-.53V4.01c0-.02-.012-.04-.03-.047L.738 1.68z" />
               </svg>
-            </span>
+            </SVGs>
           </a>
 
           <a
@@ -86,7 +86,7 @@ const ProfileInfo = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span class="svg-width">
+            <SVGs variant="default">
               <svg
                 viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ const ProfileInfo = () => {
                   fill-rule="nonzero"
                 />
               </svg>
-            </span>
+            </SVGs>
           </a>
         </LogoContainer>
       </div>

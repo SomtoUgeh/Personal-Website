@@ -117,9 +117,17 @@ export const Icons = styled.li`
   }
 `;
 
-// export const Tool = styled.span`
-//   font-size: 14px;
-//   margin-top: 10px;
-//   font-style: normal;
-//   color: ${iconColor};
-// `;
+export const SVGs = styled.span`
+  svg {
+    width: 25px;
+    margin-top: 20px;
+    fill: ${iconColor};
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+`;
