@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Span, LinkSpan, NavLinks } from "./Setup";
+import { Span, LinkSpan, NavLinks, Folder } from "./Setup";
 
 const Container = styled.div`
   @media (max-width: 769px) {
@@ -70,7 +70,7 @@ const Content = () => {
 
       <div class="box">
         <ul class="directory-list">
-          <li class="folder">Tool Set</li>
+          <Folder>Tool Set</Folder>
           <ul className="tools">
             <li>
               <span>

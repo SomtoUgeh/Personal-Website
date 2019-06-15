@@ -83,3 +83,10 @@ export const NavLinks = styled(Span)`
     height: 2px;
   }
 `;
+
+export const Folder = styled.li`
+  color: ${fontColor};
+  font-weight: bold;
+  font-size: 20px;
+  font-style: normal;
+`;
