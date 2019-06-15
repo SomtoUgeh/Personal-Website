@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import theme from "styled-theming";
 import Toggle from "./Toggle";
 import useTheme from "./useTheme";
@@ -23,16 +24,20 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const Wrapper = styled.div`
+  position: relative;
+`;
+
 const ThemedWrapper = () => {
   const theme = useTheme();
 
   return (
     <ThemeProvider theme={theme}>
-      <>
+      <Wrapper>
         <GlobalStyle />
         <Toggle />
         <HomePage />
-      </>
+      </Wrapper>
     </ThemeProvider>
   );
 };

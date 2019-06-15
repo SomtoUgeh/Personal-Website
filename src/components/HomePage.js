@@ -6,6 +6,8 @@ import ProfileInfo from "./ProfileInfo";
 const Page = styled.div`
   height: 100vh;
   overflow: scroll;
+  /* position: absolute;
+  top: 0px; */
 `;
 
 const Wrapper = styled.div`

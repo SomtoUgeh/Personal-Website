@@ -97,7 +97,7 @@
 .footer {
   margin: 50px 0;
   padding-top: 15px;
-  border-top: 1px solid #ddd;
+  border-top: 1px dashed #ddd;
 }
 
 .footer p {
@@ -106,11 +106,16 @@
 }
 
 /* Mode switch */
+.toggle-component-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 50px;
+  height: 24px;
 }
 
 .switch input {
@@ -134,8 +139,8 @@
 .slider:before {
   position: absolute;
   content: '';
-  height: 26px;
-  width: 26px;
+  height: 16px;
+  width: 16px;
   left: 4px;
   bottom: 4px;
   background-color: white;
