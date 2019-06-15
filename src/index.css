@@ -45,19 +45,6 @@
   text-align: center;
 }
 
-/* .svg-width svg {
-  width: 25px;
-  margin-top: 20px;
-  fill: #8a8a8a;
-  transition: opacity 0.3s ease;
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.svg-width svg:hover {
-  opacity: 1;
-} */
-
 .contact {
   margin-bottom: 4px !important;
   font-size: 18px;
@@ -132,6 +119,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  box-shadow: 0 0 18px #fff;
 }
 
 /* Rounded sliders */
