@@ -97,7 +97,7 @@
 /* Mode switch */
 .toggle-component-container {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: end;
   margin-top: 20px;
   margin-right: 25px;
