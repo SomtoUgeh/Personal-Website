@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Span, LinkSpan, NavLinks, Folder } from "./Setup";
+import { Span, LinkSpan, NavLinks, Folder, Icons } from "./Setup";
 
 const Container = styled.div`
   @media (max-width: 769px) {
@@ -72,38 +72,38 @@ const Content = () => {
         <ul class="directory-list">
           <Folder>Tool Set</Folder>
           <ul className="tools">
-            <li>
+            <Icons variant="default">
               <span>
                 <i class="fab fa-react" />
               </span>
-              <span class="tool">React</span>
-            </li>
-            <li>
+              <span>React</span>
+            </Icons>
+            <Icons variant="default">
               <span>
                 <i class="fab fa-angular" />
               </span>
               <span class="tool">Angular</span>
-            </li>
-            <li>
+            </Icons>
+            <Icons variant="default">
               <span>
                 <i class="fab fa-css3-alt" />
               </span>
               <span class="tool">CSS</span>
-            </li>
-            <li>
+            </Icons>
+            <Icons variant="default">
               <span>
                 <i class="fab fa-python" />
               </span>
               <span class="tool">
                 Python <br /> (Django)
               </span>
-            </li>
-            <li>
+            </Icons>
+            <Icons variant="default">
               <span>
                 <i class="fab fa-node-js" />
               </span>
               <span class="tool">Node JS</span>
-            </li>
+            </Icons>
           </ul>
         </ul>
       </div>

@@ -13,6 +13,10 @@ const fontColor = theme.variants("mode", "variant", {
   default: { light: "hsla(0,0%,0%,0.9)", dark: "#FFF" }
 });
 
+const iconColor = theme.variants("mode", "variant", {
+  default: { light: "#8a8a8a", dark: "#BB6B89" }
+});
+
 export const Span = styled.a`
   position: relative;
   color: ${fontColor};
@@ -20,6 +24,7 @@ export const Span = styled.a`
   cursor: pointer;
   font-size: 18px;
   font-family: "Akkurat-Light", sans-serif;
+  font-weight: 900;
 
   &::after {
     display: block;
@@ -42,7 +47,6 @@ export const Span = styled.a`
 
 export const LinkSpan = styled(Span)`
   font-size: 18px;
-  font-weight: 900;
 
   &::before {
     content: "";
@@ -90,3 +94,32 @@ export const Folder = styled.li`
   font-size: 20px;
   font-style: normal;
 `;
+
+export const Icons = styled.li`
+  span i {
+    color: ${iconColor};
+    font-size: 46px;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    opacity: 0.7;
+    margin-top: 10px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  span {
+    font-size: 14px;
+    margin-top: 10px;
+    font-style: normal;
+    color: ${iconColor};
+  }
+`;
+
+// export const Tool = styled.span`
+//   font-size: 14px;
+//   margin-top: 10px;
+//   font-style: normal;
+//   color: ${iconColor};
+// `;
