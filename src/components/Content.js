@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ReactTooltip from "react-tooltip";
 import { Span, LinkSpan, NavLinks, Folder, Icons } from "./Setup";
 
 const Container = styled.div`
@@ -30,14 +31,13 @@ const Content = () => {
       <Nav>
         <h1>Hi!</h1>
 
-        <NavLinks
-          variant="default"
-          href="https://www.notion.so/Blog-83ab00afd11a4192b0060fbc4be2c223"
+        <NavLinks variant="default" data-tip="Coming Soon! 😁">
+          {/* href="https://www.notion.so/Blog-83ab00afd11a4192b0060fbc4be2c223"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer" */}
           Blog!
         </NavLinks>
+        <ReactTooltip place="top" type="info" effect="solid" />
       </Nav>
 
       <WriteUp>
