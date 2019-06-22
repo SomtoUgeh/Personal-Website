@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import ThemedWrapper from "./components/ThemedWrapper";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CoolTests from "./components/tests/tests";
 
 class App extends Component {
   componentDidMount() {
@@ -17,6 +18,7 @@ class App extends Component {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={ThemedWrapper} />
+          <Route exact path="/components" component={CoolTests} />
         </Switch>
       </BrowserRouter>
     );
