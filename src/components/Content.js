@@ -51,13 +51,16 @@ const Content = () => {
           yesterday. I build, operate & sometimes rescue full-stack web applications.
         </WriteUp>
 
-        <WriteUp>
-          I am a <span>JavaScript Developer</span>, currently working at{" "}
+        {/* <WriteUp>
+          I am a <span>JavaScript Developer</span>, and I am taking a break off work.
+
+          working at{" "}
           <LinkSpan variant="default" href="https://www.softcom.ng" target="_blank">
             Softcom
           </LinkSpan>
           , Lagos, Nigeria.
-        </WriteUp>
+        </WriteUp> */}
+
         <WriteUp>
           I love my work, it has allowed me to understand design and development of digital products
           and how it affects our users.
