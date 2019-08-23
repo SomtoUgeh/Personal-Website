@@ -34,8 +34,8 @@ const ProfileInfo = () => {
       <Image src={profilePicture2} alt="Somtochukwu_Medua-Ugeh" />
       <div style={{ marginTop: "10px" }}>
         <h4 className="contact">Get in touch</h4>
-        <Span variant="default" href="mailto:hello@somto.dev?subject=Hello Somto!">
-          hello@somto.dev
+        <Span variant="default" href="mailto:smugeh@gmail.com?subject=Hello Somto!">
+          smugeh@gmail.com
         </Span>
 
         <LogoContainer>

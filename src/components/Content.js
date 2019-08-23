@@ -31,13 +31,14 @@ const Content = () => {
       <Nav>
         <h1>Hi!</h1>
 
-        <NavLinks variant="default" data-tip="Coming Soon! 😁">
-          {/* href="https://www.notion.so/Blog-83ab00afd11a4192b0060fbc4be2c223"
+        <NavLinks
+          variant="default"
+          href="https://www.notion.so/Blog-83ab00afd11a4192b0060fbc4be2c223"
           target="_blank"
-          rel="noopener noreferrer" */}
+          rel="noopener noreferrer"
+        >
           Blog!
         </NavLinks>
-        <ReactTooltip place="top" type="info" effect="solid" />
       </Nav>
 
       <WriteUp>
@@ -51,15 +52,13 @@ const Content = () => {
           yesterday. I build, operate & sometimes rescue full-stack web applications.
         </WriteUp>
 
-        {/* <WriteUp>
-          I am a <span>JavaScript Developer</span>, and I am taking a break off work.
-
-          working at{" "}
+        <WriteUp>
+          I am a <span>JavaScript Developer</span>, and I work at{" "}
           <LinkSpan variant="default" href="https://www.softcom.ng" target="_blank">
             Softcom
           </LinkSpan>
           , Lagos, Nigeria.
-        </WriteUp> */}
+        </WriteUp>
 
         <WriteUp>
           I love my work, it has allowed me to understand design and development of digital products
@@ -116,7 +115,7 @@ const Content = () => {
 
         <WriteUp>
           Where can you see my work?{" "}
-          <Span variant="default" href="mailto:hello@somto.dev?subject=Hello Somto!">
+          <Span variant="default" href="mailto:smugeh@gmail.com?subject=Hello Somto!">
             Email me
           </Span>{" "}
           and I will prepare work samples relevant to your project with accompanying details.
