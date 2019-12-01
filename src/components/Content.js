@@ -54,8 +54,8 @@ const Content = () => {
 
         <WriteUp>
           I am a <span>JavaScript Developer</span>, and I work at{" "}
-          <LinkSpan variant="default" href="https://www.softcom.ng" target="_blank">
-            Softcom
+          <LinkSpan variant="default" href="https://www.eyowo.com" target="_blank">
+            Eyowo
           </LinkSpan>
           , Lagos, Nigeria.
         </WriteUp>
