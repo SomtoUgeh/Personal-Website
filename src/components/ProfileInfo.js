@@ -106,7 +106,7 @@ const ProfileInfo = () => {
       </div>
 
       <div className="footer">
-        <p>&copy; 2019 Somto M.Ugeh</p>
+        <p>&copy; {new Date().getFullYear()} Somto M.Ugeh</p>
       </div>
     </ImageContainer>
   );
